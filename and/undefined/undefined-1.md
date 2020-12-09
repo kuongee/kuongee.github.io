@@ -2,7 +2,7 @@
 
 ```text
 
-    const axiosOptions = {
+const axiosOptions = {
     method,
     url,
     params,
