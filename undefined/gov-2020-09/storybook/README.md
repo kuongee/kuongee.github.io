@@ -35,11 +35,15 @@ package.json에 다음 스크립트 추가
 
 .storybook/main.js에 다음 코드 추가
 
+`stories` - an array of globs that indicates the [location of your story files](https://storybook.js.org/docs/react/configure/overview#configure-story-loading), relative to `main.js`.
+
 ```text
 module.exports = {
   stories: ['../src/**/*.stories.[tj]s'],
 }
 ```
+
+[https://storybook.js.org/docs/react/configure/overview](https://storybook.js.org/docs/react/configure/overview)
 
 ### Step 4: Create the webpack config file <a id="id-[GOV2]Storybook-Step4:Createthewebpackconfigfile"></a>
 
@@ -69,6 +73,7 @@ module.exports = {
               additionalData: `
                     @import "src/assets/scss/style.scss";
                   `,
+              // Prepends Sass/SCSS code before the actual entry file.
             },
           },
         ],
