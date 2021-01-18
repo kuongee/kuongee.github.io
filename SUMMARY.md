@@ -57,4 +57,6 @@
 * [Algorithm](study/README.md)
   * [문제풀이](study/undefined/README.md)
     * [백준 1146](study/undefined/1146.md)
+* [면접 후기](undefined-2/README.md)
+  * [2021-01-07 네이버 BizCIC](undefined-2/2021-01-07-bizcic.md)
 
