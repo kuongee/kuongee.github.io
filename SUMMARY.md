@@ -23,6 +23,7 @@
     * [vue.config.js](undefined/cmp-2021-01/vue.config.js.md)
     * [Webpack DevServer Proxy](undefined/cmp-2021-01/webpack-devserver-proxy.md)
 * [웹 & 프론트엔드](and/README.md)
+  * [HTTP](and/http.md)
   * [\[우아한테크러닝\] React & TypeScript](and/react-and-typescript/README.md)
     * [1일차](and/react-and-typescript/1.md)
     * [2일차 \(1\)](and/react-and-typescript/2-1.md)
