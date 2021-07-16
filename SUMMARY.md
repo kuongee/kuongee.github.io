@@ -28,6 +28,8 @@
     * [Webpack ESLint, Prettier 설정](undefined/cmp-2021-01/webpack-eslint-prettier.md)
     * [배포 시 context path 추가](undefined/cmp-2021-01/context-path.md)
     * [빌드 / 배포](undefined/cmp-2021-01/undefined.md)
+    * [빌드 공부](undefined/cmp-2021-01/undefined-1.md)
+    * [babel과 corejs](undefined/cmp-2021-01/babel-corejs.md)
 * [웹 & 프론트엔드](and/README.md)
   * [HTTP](and/http.md)
   * [\[우아한테크러닝\] React & TypeScript](and/react-and-typescript/README.md)
