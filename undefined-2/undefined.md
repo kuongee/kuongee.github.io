@@ -1,0 +1,91 @@
+# 면접 질문 답 정리 및 예상 질문 공부
+
+## HTML, CSS
+
+* innerHTML
+
+  | 장점 | 단점 |
+  | :--- | :--- |
+  | DOM 조작 방식에 비해 빠르고 간편하다. | XSS공격에 취약점이 있기 때문에 사용자로 부터 입력받은 콘텐츠\(untrusted data: 댓글, 사용자 이름 등\)를 추가할 때 주의하여야 한다. |
+  | 간편하게 문자열로 정의한 여러 요소를 DOM에 추가할 수 있다. |  |
+
+  * [https://gist.github.com/caike/35522c3da161d29fc2ce](https://gist.github.com/caike/35522c3da161d29fc2ce)
+  * The following code will not trigger an alert. `target.innerHTML = "<script> alert('XSS Attack'); </script>";`
+
+    The following code will trigger an alert. `target.innerHTML = "<img src=x onerror=\"alert('XSS Attack')\" >";`
+
+  * [https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
+
+* 
+## JavaScript
+
+* Event Loop, Micro Task Queue
+  * [https://ko.javascript.info/event-loop](https://ko.javascript.info/event-loop)
+  * **더 정리**
+* ES6에서 추가된 것들이 뭐가 있는지
+  * const let 
+  * string literal
+  * spread operator
+  * 화살표 함수
+  * 
+
+## Vue
+
+* data 
+  * **Restriction:** Only accepts `Function` when used in a component definition.
+  * [https://vuejs.org/v2/guide/reactivity.html](https://vuejs.org/v2/guide/reactivity.html)
+* vue 지시자 몇가지 이야기해봐라
+  * v-if / v-else
+  * v-show
+  * v-for
+  * 
+* v-if, v-for 같이 사용하면 안되는 이유는?
+  *  2.x에서는 동일한 엘리먼트에 `v-if`와 `v-for`를 함께 사용할 때, `v-for`가 더 높은 우선순위를 갖습니다.
+    * This is very bad practice. Don't do it again. The problem with this is that VueJS prioritizes the v-for directive over the v-if directive. So under the hood, it loops through every element and THEN checks the v-if conditional.
+    * 그래서 가능하면 computed로 array filtering 하거나 v-for를 밖으로 빼거나
+  * 3.x에서는 `v-if`가 항상 `v-for` 보다 더 높은 우선순위를 갖습니다.
+  * [https://v3.ko.vuejs.org/guide/migration/v-if-v-for.html\#%E1%84%80%E1%85%A2%E1%84%8B%E1%85%AD](https://v3.ko.vuejs.org/guide/migration/v-if-v-for.html#%E1%84%80%E1%85%A2%E1%84%8B%E1%85%AD)
+
+## React vs. Vue
+
+* React/Vue 비교 해봐라
+  * Vue 2.x 버전에서는 하나의 vue 파일에 template, script, style이 다 나눠져있음 React는 하나로 합쳐져 있는 거 같음
+  * 컴포넌트 내 data 업데이트가 좀 다른데  vue는 data로 선언된 데이터들에 직접 값을 갱신하면 되고, react는 setState로 갱신해야 한다.
+  * [https://erwinousy.medium.com/난-react와-vue에서-완전히-같은-앱을-만들었다-이것은-그-차이점이다-5cffcbfe287f](https://erwinousy.medium.com/%EB%82%9C-react%EC%99%80-vue%EC%97%90%EC%84%9C-%EC%99%84%EC%A0%84%ED%9E%88-%EA%B0%99%EC%9D%80-%EC%95%B1%EC%9D%84-%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4-%EC%9D%B4%EA%B2%83%EC%9D%80-%EA%B7%B8-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%B4%EB%8B%A4-5cffcbfe287f)
+* React/Vue lifecycle 어떻게 다른지
+  * [https://frontendsociety.com/transitioning-from-react-to-vue-c9aa943bd0da](https://frontendsociety.com/transitioning-from-react-to-vue-c9aa943bd0da)
+    * `constructor` → [`created`](https://vuejs.org/v2/api/#created)
+    * `componentWillMount` → [`beforeMount`](https://vuejs.org/v2/api/#beforeMount)
+    * `componentDidMount` → [`mounted`](https://vuejs.org/v2/api/#mounted)
+    * `componentWillUnmount` → [`beforeDestroy`](https://vuejs.org/v2/api/#beforeDestroy)
+    * `componentDidCatch` → _n/a_
+    * `shouldComponentUpdate` → _n/a_
+    * `setState` → _n/a — just set property directly \(see “_Managing Component State and Data_” below\)_
+* React의 componentDidMount가 Vue에서는 어떤 부분일까?
+  * mounted
+  * 마운트 된 다음에 호출되는 라이프사이클
+
+## 아직 답 안 달은 질문
+
+* Vue Mixin
+* react를 깊이 공부한 적이 있는지
+* DOMContentLoaded와 load event 비교
+* OOP 개념 설명
+  * 
+* * const let var 비교
+* Hoisting?
+* 클로저가 뭐고 언제 쓰이는지
+* 좋은 개발자란 무엇일까?
+* 좋은 프로그래머?에 대해 책을 읽어본 적이 있는지
+* 해시테이블이 뭐야? 내부 구조는 뭐로 되어있을까
+* 깃이나 코드리뷰 어떻게 하고 있는지
+* Object.assign이 뭔지? 한계
+* REST API가 뭔지, 행동 4개
+* function이랑 화살표 함수 차이
+* function / class 차이
+* babel을 하나의 단어로 표현하면?
+* this에 대해서도 이야기 한 거 같음
+* Promise가 뭔지 어떤 문제 때문에 async/await가 나왔는지
+
+  \(내가 promise의 한계로 에러처리 안된다고 했더니 async/await에서는 어떻게 에러처리 했냐고 물어보심\)
+
