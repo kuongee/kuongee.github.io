@@ -31,9 +31,25 @@
 
 ## Vue
 
-* data 
-  * **Restriction:** Only accepts `Function` when used in a component definition.
-  * [https://vuejs.org/v2/guide/reactivity.html](https://vuejs.org/v2/guide/reactivity.html)
+* 라이프사이클
+  * [https://mygumi.tistory.com/201?category=697395](https://mygumi.tistory.com/201?category=697395)
+  * Lifecycle hooks allow you to know when your component is created, added to the DOM, updated, or destroyed.
+  * [https://alligator.io/vuejs/component-lifecycle/](https://alligator.io/vuejs/component-lifecycle/)
+* 옵션
+  * data, props, computed, methods, watch, emits
+  * **computed** 
+    * 캐싱 된다는 것이 핵심, 반응형 종속성이 변경될 때에만 다시 계산
+  * methods
+    * 화살표 함수 사용하면 안됨, 그럼 상위 컨텍스트에 바인딩 되니까
+  * **data** 
+    * **Restriction:** Only accepts `Function` when used in a component definition.
+    * 동일한 컴포넌트가 여러 번 사용되더라도 동일한 객체를 가리키는 것이 아니라 함수가 호출될 때마다 만들어진 객체가 리턴되기 되어 서로 다른 객체를 참조할 수 있기 때문이라고 합니다.
+    * 하지만 컴포넌트에서의 Data 선언은 다르다. 각각의 다른 컴포넌트마다 각자의 데이터를 관리해야 하기 때문이다. 컴포넌트마다 Data를 오브젝트로 생성하여 여러 번 사용하더라도 결국엔 JS가 작동하는 방식으로 인해 구성 요소의 모든 단일 인스턴스가이 속성을 공유하여 Data 값을 참조하기 때문에 Data 침범이 일어날 수 있다.
+
+      이러한 이유 때문에 컴포넌트에서는 객체 리터럴로 선언하는 것이 아니라 함수형으로 return 값을 통해 리터럴을 반환한다. return을 이용하면 각 컴포넌트마다 데이터를 분리하여 관리할 수 있게 된다.
+
+    * [https://hj-tilblog.tistory.com/78?category=914136](https://hj-tilblog.tistory.com/78?category=914136)
+    * [https://vuejs.org/v2/guide/reactivity.html](https://vuejs.org/v2/guide/reactivity.html)
 * vue 지시자 몇가지 이야기해봐라
   * v-if / v-else
   * v-show
@@ -48,6 +64,8 @@
 
 ## React vs. Vue
 
+* virtual DOM
+  * [https://mygumi.tistory.com/190](https://mygumi.tistory.com/190)
 * React/Vue 비교 해봐라
   * Vue 2.x 버전에서는 하나의 vue 파일에 template, script, style이 다 나눠져있음 React는 하나로 합쳐져 있는 거 같음
   * 컴포넌트 내 data 업데이트가 좀 다른데  vue는 data로 선언된 데이터들에 직접 값을 갱신하면 되고, react는 setState로 갱신해야 한다.
@@ -67,7 +85,6 @@
 
 ## 아직 답 안 달은 질문
 
-* Vue Mixin
 * react를 깊이 공부한 적이 있는지
 * DOMContentLoaded와 load event 비교
 * OOP 개념 설명
