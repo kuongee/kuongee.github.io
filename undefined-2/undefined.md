@@ -82,7 +82,12 @@
   * string literal
   * spread operator
   * 화살표 함수
-  * 
+* Hoisting?
+  * [https://github.com/kuongee/my-js/blob/kuongee/Frontend/JavaScript/hoisting.md](https://github.com/kuongee/my-js/blob/kuongee/Frontend/JavaScript/hoisting.md)
+* const let var 비교
+  * [https://github.com/kuongee/my-js/blob/kuongee/Frontend/JavaScript/varConstLet.md](https://github.com/kuongee/my-js/blob/kuongee/Frontend/JavaScript/varConstLet.md)
+* 클로저가 뭐고 언제 쓰이는지
+  * [https://github.com/kuongee/my-js/blob/kuongee/Frontend/closure.md](https://github.com/kuongee/my-js/blob/kuongee/Frontend/closure.md)
 
 ## Vue
 
@@ -141,12 +146,8 @@
 ## 아직 답 안 달은 질문
 
 * react를 깊이 공부한 적이 있는지
-* * OOP 개념 설명
-  * 
-* * const let var 비교
-* Hoisting?
-* 클로저가 뭐고 언제 쓰이는지
-* 좋은 개발자란 무엇일까?
+* OOP 개념 설명
+* * 좋은 개발자란 무엇일까?
 * 좋은 프로그래머?에 대해 책을 읽어본 적이 있는지
 * 해시테이블이 뭐야? 내부 구조는 뭐로 되어있을까
 * 깃이나 코드리뷰 어떻게 하고 있는지
