@@ -57,6 +57,7 @@
 * [면접 준비 & 후기](undefined-2/README.md)
   * [후기](undefined-2/undefined-1/README.md)
     * [2021-01-07 네이버 BizCIC](undefined-2/undefined-1/2021-01-07-bizcic.md)
+    * [2021-08-30 카카오 톡FE](undefined-2/undefined-1/2021-08-30-fe.md)
   * [면접 질문 답 정리 및 예상 질문 공부](undefined-2/undefined.md)
   * [2020-05 카카오 FE 준비](undefined-2/2020-05-fe.md)
   * [네이버 BizCIC 면접 준비](undefined-2/bizcic.md)

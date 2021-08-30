@@ -82,29 +82,10 @@
   * string literal
   * spread operator
   * 화살표 함수
-* Hoisting?
-  * [https://github.com/kuongee/my-js/blob/kuongee/Frontend/JavaScript/hoisting.md](https://github.com/kuongee/my-js/blob/kuongee/Frontend/JavaScript/hoisting.md)
-* const let var 비교
-  * [https://github.com/kuongee/my-js/blob/kuongee/Frontend/JavaScript/varConstLet.md](https://github.com/kuongee/my-js/blob/kuongee/Frontend/JavaScript/varConstLet.md)
-* 클로저가 뭐고 언제 쓰이는지
-  * [https://github.com/kuongee/my-js/blob/kuongee/Frontend/closure.md](https://github.com/kuongee/my-js/blob/kuongee/Frontend/closure.md)
+  * 
 
 ## Vue
 
-* MVVM
-  * Model -&gt; data
-  * View -&gt; HTML
-  * ViewModel -&gt; Vue 객체
-  * 동작
-    * MVVM 패턴의 동작 순서는 아래와 같습니다.
-      1. 사용자의 Action들은 View를 통해 들어오게 됩니다.
-      2. View에 Action이 들어오면, Command 패턴으로 View Model에 Action을 전달합니다.
-      3. View Model은 Model에게 데이터를 요청합니다.
-      4. Model은 View Model에게 요청받은 데이터를 응답합니다.
-      5. View Model은 응답 받은 데이터를 가공하여 저장합니다.
-      6. View는 View Model과 Data Binding하여 화면을 나타냅니다.
-  * DOM이 변경됐을 때, 뷰모델의 DOM Listeners를 거쳐서 모델로 신호가 간다.
-  * 모델에서 변경된 데이터를 뷰모델을 거쳐서 뷰로 보냈을 때, 화면이 reactive하게 반응이 일어난다.
 * 라이프사이클
   * [https://mygumi.tistory.com/201?category=697395](https://mygumi.tistory.com/201?category=697395)
   * Lifecycle hooks allow you to know when your component is created, added to the DOM, updated, or destroyed.
@@ -160,23 +141,19 @@
 ## 아직 답 안 달은 질문
 
 * react를 깊이 공부한 적이 있는지
-* OOP 개념 설명
-* call, apply, bind
+* * OOP 개념 설명
+  * 
+* * const let var 비교
+* Hoisting?
+* 클로저가 뭐고 언제 쓰이는지
 * 좋은 개발자란 무엇일까?
 * 좋은 프로그래머?에 대해 책을 읽어본 적이 있는지
 * 해시테이블이 뭐야? 내부 구조는 뭐로 되어있을까
 * 깃이나 코드리뷰 어떻게 하고 있는지
 * Object.assign이 뭔지? 한계
-  * 얕은 복사는 참조\(주소\)값의 복사를 나타낸다.
-  * assign이나 spread operator는 2차원 객체는 \(객체 안에 객체\) 얕은 복사가 이루어진다.
-  * [https://mygumi.tistory.com/322](https://mygumi.tistory.com/322)
-  * [https://velog.io/@recordboy/](https://velog.io/@recordboy/JavaScript-%EC%96%95%EC%9D%80-%EB%B3%B5%EC%82%ACShallow-Copy%EC%99%80-%EA%B9%8A%EC%9D%80-%EB%B3%B5%EC%82%ACDeep-Copy)JavaScript-얕은-복사Shallow-Copy와-깊은-복사Deep-Copy
 * REST API가 뭔지, 행동 4개
 * function이랑 화살표 함수 차이
 * function / class 차이
-  * [https://davidtang.io/javascript-constructor-functions-and-classes/](https://davidtang.io/javascript-constructor-functions-and-classes/)
-  * [https://github.com/kuongee/my-js/blob/kuongee/Frontend/object.md](https://github.com/kuongee/my-js/blob/kuongee/Frontend/object.md)
-  * [https://uiyoji-journal.tistory.com/101](https://uiyoji-journal.tistory.com/101)
 * babel을 하나의 단어로 표현하면?
 * this에 대해서도 이야기 한 거 같음
 * Promise가 뭔지 어떤 문제 때문에 async/await가 나왔는지
