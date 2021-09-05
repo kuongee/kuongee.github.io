@@ -71,6 +71,8 @@
   * **beforeunload/unload**: 사용자가 페이지를 떠날 때 발생한다.
     * beforeunload는 예시로 '정말 이 페이지를 나가시겠습니까?' 이런 체크를 할 때 사용할 수 있다.
     * window 객체에서 발생
+* 브라우저에 url을 입력하면 일어나는 일
+  * [https://owlgwang.tistory.com/1](https://owlgwang.tistory.com/1)
 
 ## JavaScript
 
