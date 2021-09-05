@@ -107,6 +107,10 @@
       6. View는 View Model과 Data Binding하여 화면을 나타냅니다.
   * DOM이 변경됐을 때, 뷰모델의 DOM Listeners를 거쳐서 모델로 신호가 간다.
   * 모델에서 변경된 데이터를 뷰모델을 거쳐서 뷰로 보냈을 때, 화면이 reactive하게 반응이 일어난다.
+  * 비교
+    * MVC: Controller에 많은 코드가 몰리게되고, 각 모듈별 의존성이 강해서 변경사항이 발생하면 Model, View, Controller가 모두 변경되어야 합니다.
+    * MVP: View와 Model 간의 의존성은 삭제되었으나 View와 Presenter 간의 의존성이 1:1 수준으로 강하게 적용됩니다.
+    * MVVM: 데이터 바이딩을 통해 View와 ViewModel은 1:n 관계를 가질 수 있습니다. 이로써 모듈별 의존성이 없어지고 독립적이게 됨으로써 역할별 유닛테스트가 용이하고, 비동기성 코드를 작성할 수 있게됩니다.
 * 라이프사이클
   * [https://mygumi.tistory.com/201?category=697395](https://mygumi.tistory.com/201?category=697395)
   * Lifecycle hooks allow you to know when your component is created, added to the DOM, updated, or destroyed.
