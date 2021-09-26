@@ -69,6 +69,7 @@
   * [2021-01-07 네이버 BizCIC 준비](undefined-2/bizcic.md)
   * [2021-08-30 카카오 FE 준비](undefined-2/2021-08-fe.md)
   * [2021-09-07 CJ올리브영 준비](undefined-2/2021-09-07-cj.md)
+  * [CJ올리브영 2차 준비](undefined-2/cj-2.md)
 * [Interests](interests/README.md)
   * [Scalable Web Architecture and Distributed Sysems](interests/2018-01-19-webarchitecture.md)
   * [\[Infra\] CAP 정리](interests/cap.md)
