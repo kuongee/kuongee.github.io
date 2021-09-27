@@ -4,21 +4,45 @@
 
 1차 때 답 못했던 질문들
 
-* HTTP1.0 vs HTTPS2.0
-* HTTP vs HTTPS
-* promise 공부하고 있다고 함 -&gt; **어떤 API...???** 있냐고 물어보심 \(잘 몰라서 그냥 아무거나 대답함\)
-  * [https://ko.javascript.info/promise-api](https://ko.javascript.info/promise-api)
-  * `Promise` 클래스에는 5가지 정적 메서드가 있습니다.
+#### HTTP vs HTTPS
 
-    1. `Promise.all(promises)` – 모든 프라미스가 이행될 때까지 기다렸다가 그 결괏값을 담은 배열을 반환합니다. 주어진 프라미스 중 하나라도 실패하면 `Promise.all`는 거부되고, 나머지 프라미스의 결과는 무시됩니다.
-    2. `Promise.allSettled(promises)` – 최근에 추가된 메서드로 모든 프라미스가 처리될 때까지 기다렸다가 그 결과\(객체\)를 담은 배열을 반환합니다. 객체엔 다음과 같은 정보가 담깁니다.
-       * `status`: `"fulfilled"` 또는 `"rejected"`
-       * `value`\(프라미스가 성공한 경우\) 또는 `reason`\(프라미스가 실패한 경우\)
-    3. `Promise.race(promises)` – 가장 먼저 처리된 프라미스의 결과 또는 에러를 담은 프라미스를 반환합니다.
-    4. `Promise.resolve(value)` – 주어진 값을 사용해 이행 상태의 프라미스를 만듭니다.
-    5. `Promise.reject(error)` – 주어진 에러를 사용해 거부 상태의 프라미스를 만듭니다.
+* [https://joshua1988.github.io/web-development/http-part1/](https://joshua1988.github.io/web-development/http-part1/)
+* ‘HTTP vs HTTPS 차이’는 바로 SSL 인증서입니다. 사실 HTTPS는 쉽게 말해서 HTTP 프로토콜에 보안 기능을 추가한 것이라고 말할 수 있는데요. 보안 기능은 생각보다 매우 중요합니다. 특히 신용카드 정보나 비밀번호 등 사용자들의 민감한 정보들을 다루는 웹사이트에서라면 더욱 그렇죠.
 
-    실무에선 다섯 메서드 중 `Promise.all`을 가장 많이 사용합니다.
+  **SSL 인증서는 사용자가 사이트에 제공하는 정보를 암호화하는데, 쉽게 말해서 데이터를 암호로 바꾼다고 생각하면 쉽습니다. 이렇게 전송된 데이터는 중간에서 누군가 훔쳐 낸다고 하더라도 데이터가 암호화되어있기 때문에 해독할 수 없습니다. 그 외에도 HTTPS는 TLS\(전송 계층 보안\) 프로토콜을 통해서도 보안을 유지합니다.** TSL은 데이터 무결성을 제공하기 때문에 데이터가 전송 중에 수정되거나 손상되는 것을 방지하고, 사용자가 자신이 의도하는 웹사이트와 통신하고 있음을 입증하는 인증 기능도 제공하고 있습니다.
 
-  * 프라미스 메서드 `Promise.resolve`와 `Promise.reject`는 `async/await` 문법\([뒤에서](https://ko.javascript.info/async-await) 다룸\)이 생긴 후로 쓸모없어졌기 때문에 근래에는 거의 사용하지 않습니다.
+* [https://jeong-pro.tistory.com/89](https://jeong-pro.tistory.com/89)
+* http://blog.wishket.com/http-vs-https-차이-알면-사이트의-레벨이-보인다/
+* **HTTPS의 암호화의 전송을 이해하는데 필요한 개념들**
+  * 1. 암호화: 어떤 정보를 암호화된 정보로 바꾸는 것이며,  2. 복호화: 암호화된 정보를 다시 원래 정보로 바꾸는 것입니다.  3. 키: 암호화, 복호화할 때 쓰는 비밀번호이며,  4. HTTPS는 공통 키 방식과 비대칭 키 방식을 같이 사용합니다.
+  * **공통 키 방식: 암호화할 때와 복호화할 때 같은 키를 사용하는 방식입니다.**
+
+     1. 장점: 단순한 구조로 CPU를 적게 쓰고 빠르다.  
+     2. 단점: 공통 키를 빼앗기면 복호화를 할 수 있으므로 보안에 취약하다는 단점이 있다.
+
+  * **비대칭 키 방식: 암호화할 때와 복호화할 때 다른 키를 사용하는 비대칭 방식입니다.**
+
+     1. 클라이언트는 공통 키를, 서버는 인증서와 공개 키를 제공하며 클라이언트는 서버가 제공한 공개 키를 통해 공통 키를 암호화하여 서버에게 전송합니다. 서버는 수신한 HTTPS의 인증서와 공개 키 일치를 바탕으로 공통 키를 복호해 요청에 대응합니다.  
+     2. 장점: 키 전송과정 중 빼앗겨도\(해킹 당해도\) 빼앗은 자\(해커\)가 해독을 할 수 없으니 공통 키 방식보다 보다 안전합니다.  
+     3. 단점: 공통 키 방식보다 느리고 리소스 소비가 큽니다.
+
+#### HTTP1.0 vs HTTPS2.0
+
+* 
+#### promise 공부하고 있다고 함 -&gt; **어떤 API...???** 있냐고 물어보심 \(잘 몰라서 그냥 아무거나 대답함\)
+
+* [https://ko.javascript.info/promise-api](https://ko.javascript.info/promise-api)
+* `Promise` 클래스에는 5가지 정적 메서드가 있습니다.
+
+  1. `Promise.all(promises)` – 모든 프라미스가 이행될 때까지 기다렸다가 그 결괏값을 담은 배열을 반환합니다. 주어진 프라미스 중 하나라도 실패하면 `Promise.all`는 거부되고, 나머지 프라미스의 결과는 무시됩니다.
+  2. `Promise.allSettled(promises)` – 최근에 추가된 메서드로 모든 프라미스가 처리될 때까지 기다렸다가 그 결과\(객체\)를 담은 배열을 반환합니다. 객체엔 다음과 같은 정보가 담깁니다.
+     * `status`: `"fulfilled"` 또는 `"rejected"`
+     * `value`\(프라미스가 성공한 경우\) 또는 `reason`\(프라미스가 실패한 경우\)
+  3. `Promise.race(promises)` – 가장 먼저 처리된 프라미스의 결과 또는 에러를 담은 프라미스를 반환합니다.
+  4. `Promise.resolve(value)` – 주어진 값을 사용해 이행 상태의 프라미스를 만듭니다.
+  5. `Promise.reject(error)` – 주어진 에러를 사용해 거부 상태의 프라미스를 만듭니다.
+
+  실무에선 다섯 메서드 중 `Promise.all`을 가장 많이 사용합니다.
+
+* 프라미스 메서드 `Promise.resolve`와 `Promise.reject`는 `async/await` 문법\([뒤에서](https://ko.javascript.info/async-await) 다룸\)이 생긴 후로 쓸모없어졌기 때문에 근래에는 거의 사용하지 않습니다.
 
