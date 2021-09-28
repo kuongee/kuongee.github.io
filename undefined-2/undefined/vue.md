@@ -48,4 +48,10 @@
     * 그래서 가능하면 computed로 array filtering 하거나 v-for를 밖으로 빼거나
   * 3.x에서는 `v-if`가 항상 `v-for` 보다 더 높은 우선순위를 갖습니다.
   * [https://v3.ko.vuejs.org/guide/migration/v-if-v-for.html\#%E1%84%80%E1%85%A2%E1%84%8B%E1%85%AD](https://v3.ko.vuejs.org/guide/migration/v-if-v-for.html#%E1%84%80%E1%85%A2%E1%84%8B%E1%85%AD)
+* Vue에서 화살표함수 쓸 수 없는 거
+  * [https://joshua1988.github.io/web-development/translation/essential-es6-features-for-vuejs/](https://joshua1988.github.io/web-development/translation/essential-es6-features-for-vuejs/)
+  *  화살표 함수의 중요한 특징은 값을 `this`로 바인딩 하지 않는 것입니다. 대신에, 화살표 함수 안에서 선언한 `this`는 해당 함수가 수행되는 컨텍스트를 가리킵니다.
+  * 뷰 인스턴스의 속성들을 정의할 때는 화살표 함수를 사용하면 안 됩니다.
+    * 왜냐하면 window를 가리키기 때문
+    * methods / computed 에서 
 

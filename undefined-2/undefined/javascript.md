@@ -8,6 +8,7 @@
   * string literal
   * spread operator
   * 화살표 함수
+  * promise
 * Hoisting?
   * [https://github.com/kuongee/my-js/blob/kuongee/Frontend/JavaScript/hoisting.md](https://github.com/kuongee/my-js/blob/kuongee/Frontend/JavaScript/hoisting.md)
 * const let var 비교
