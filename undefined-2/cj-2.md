@@ -48,6 +48,8 @@
 #### HTTP1.0 vs HTTPS2.0
 
 * 
+![](../.gitbook/assets/image%20%2833%29.png)
+
 #### promise 공부하고 있다고 함 -&gt; **어떤 API...???** 있냐고 물어보심 \(잘 몰라서 그냥 아무거나 대답함\)
 
 * [https://ko.javascript.info/promise-api](https://ko.javascript.info/promise-api)

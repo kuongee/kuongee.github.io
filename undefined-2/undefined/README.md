@@ -1,5 +1,7 @@
 # 면접 질문 답 정리 및 예상 질문 공부
 
+[https://raniee.tistory.com/15](https://raniee.tistory.com/15)
+
 ## React vs. Vue
 
 * virtual DOM
