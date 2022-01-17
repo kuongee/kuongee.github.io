@@ -6,9 +6,10 @@ gerrit
 
 git
 
-* git reset HEAD~2
+* git reset HEAD\~2
 * git stash
-* * remote에 새로 올라온 패치를 받기 전에 내가 작업하던 거 잠시 저장해두고 패치를 받는다.
+*
+  * remote에 새로 올라온 패치를 받기 전에 내가 작업하던 거 잠시 저장해두고 패치를 받는다.
 
 grunt file
 
@@ -23,7 +24,8 @@ javascript library 빌드 과정
 
 javascript object가 argument로 넘어올 때
 
-* pass by value 
+* pass by value\
+
   * string/number
 * pass by reference
   * object랑 array.
@@ -34,9 +36,7 @@ javascript undefined
 
 javascript deep copy / shallow copy
 
-* = 를 이용하면 reference가 전달
+* \= 를 이용하면 reference가 전달
 * [https://we-are.bookmyshow.com/understanding-deep-and-shallow-copy-in-javascript-13438bad941c](https://we-are.bookmyshow.com/understanding-deep-and-shallow-copy-in-javascript-13438bad941c)
 
-ESLint / prettier  
-
-
+ESLint / prettier\

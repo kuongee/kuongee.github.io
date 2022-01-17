@@ -1,6 +1,6 @@
 # Storybook의 webpack.config.js 설명
 
-```text
+```
 const path = require('path');
 // 모듈은 개발자가 프로그램을 기능 단위로 쪼개놓은 것을 의미
 // 웹팩은 여러 모듈 시스템들처럼 프로젝트에 모듈 컨셉을 적용할 수 있게 해줌
@@ -60,7 +60,7 @@ module.exports = {
 };
 ```
 
-  
+\
 참고
 
 [https://webpack.js.org/configuration/](https://webpack.js.org/configuration/)
@@ -68,4 +68,3 @@ module.exports = {
 [https://joshua1988.github.io/webpack-guide/concepts/loader.html](https://joshua1988.github.io/webpack-guide/concepts/loader.html)
 
 [https://stackoverflow.com/questions/34623229/webpack-loaders-and-include](https://stackoverflow.com/questions/34623229/webpack-loaders-and-include)
-

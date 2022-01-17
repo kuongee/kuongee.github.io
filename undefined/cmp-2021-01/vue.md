@@ -20,22 +20,24 @@ Micro Frontend 프로젝트를 새로 구성할 때 기본으로 아래 설정�
 
 템플릿 프로젝트는 다음과 같다.
 
-![](../../.gitbook/assets/image2021-6-22_15-52-25%20%281%29.png)
+![](<../../.gitbook/assets/image2021-6-22\_15-52-25 (1).png>)
 
-* template 디렉토리 재사용할 코드, 파일 등이 들어있다.
-* meta.js Vue cli로 전달받을 정보들을 선언해놓는다.
+* template 디렉토리\
+  재사용할 코드, 파일 등이 들어있다.
+* meta.js\
+  Vue cli로 전달받을 정보들을 선언해놓는다.
 
-![](../../.gitbook/assets/image2021-6-22_15-54-43.png)
+![](../../.gitbook/assets/image2021-6-22\_15-54-43.png)
 
 meta.js에 cli로 전달받은 정보들을 소스코드에도 넣을 수 있다.
 
-![](../../.gitbook/assets/image%20%2826%29.png)
+![](<../../.gitbook/assets/image (26).png>)
 
 #### vue init으로 템플릿을 활용해 프로젝트 생성하기
 
-예시\) 현재 디렉토리에 템플릿으로 프로젝트를 만든다.
+예시) 현재 디렉토리에 템플릿으로 프로젝트를 만든다.
 
-![](../../.gitbook/assets/image2021-6-22_15-57-45.png)
+![](../../.gitbook/assets/image2021-6-22\_15-57-45.png)
 
 그리고 npm install / npm run serve로 실행해본다.
 
@@ -44,4 +46,3 @@ meta.js에 cli로 전달받은 정보들을 소스코드에도 넣을 수 있다
 #### 참고
 
 * [https://medium.com/@joshvillahermosa/how-to-create-a-simple-re-usable-vue-project-template-9ec48c6ce0a2](https://medium.com/@joshvillahermosa/how-to-create-a-simple-re-usable-vue-project-template-9ec48c6ce0a2)
-
