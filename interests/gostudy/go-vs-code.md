@@ -38,7 +38,7 @@ description: '2019-11-19'
 3. extension 설치 후 미설치된 Tool을 VS code의 도움을 받아 설치 [참고](http://golang.site/go/article/203-VS-Code%EC%97%90%EC%84%9C-Go-%EC%82%AC%EC%9A%A9)
 4. 아래와 같이 테스트&#x20;
 
-![](../../.gitbook/assets/image.png)
+![](<../../.gitbook/assets/image (3).png>)
 
 
 

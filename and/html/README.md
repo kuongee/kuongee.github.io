@@ -64,4 +64,4 @@ description: HTML과 관련된 기술들을 정리합니다.
 * 해당 기능을 브라우저에서 지원하는지 확인해볼 수 있는 사이트
   * [caniuse.com](http://caniuse.com)
 * 해당 기능이 브라우저에서 지원되는지 확인하는 자바스크립트 코드
-  * [https://modernizr.com/](https://modernizr.com)
+  * [https://modernizr.com/](https://modernizr.com/)
