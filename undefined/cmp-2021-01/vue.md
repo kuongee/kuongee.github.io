@@ -31,7 +31,7 @@ Micro Frontend 프로젝트를 새로 구성할 때 기본으로 아래 설정�
 
 meta.js에 cli로 전달받은 정보들을 소스코드에도 넣을 수 있다.
 
-![](<../../.gitbook/assets/image (26).png>)
+![](<../../.gitbook/assets/image (26) (1).png>)
 
 #### vue init으로 템플릿을 활용해 프로젝트 생성하기
 

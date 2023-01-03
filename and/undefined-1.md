@@ -4,7 +4,7 @@ description: 브라우저 주소창에 www.google.com을 입력하면 일어나�
 
 # 브라우저에서 일어나는 일
 
-![](<../.gitbook/assets/image (18).png>)
+![](<../.gitbook/assets/image (18) (1).png>)
 
 * 브라우저는 입력받은 URL 확인
   * https://www.google.com\

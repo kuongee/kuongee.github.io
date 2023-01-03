@@ -4,7 +4,7 @@ description: remote 개념 이해하기
 
 # \[Github]으로 협업하기
 
-![](<../.gitbook/assets/image (5).png>)
+![](<../.gitbook/assets/image (5) (1).png>)
 
 Owner의 A-Repo에 나도 작업해서 올리고 싶을 때:
 

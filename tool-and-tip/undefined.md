@@ -40,4 +40,4 @@ Attribute 설명
 
 원하는 디버깅 설정을 선택하고 실행해본다.
 
-![실행 화면](<../.gitbook/assets/image (8).png>)
+![실행 화면](<../.gitbook/assets/image (8) (1).png>)

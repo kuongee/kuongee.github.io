@@ -15,7 +15,7 @@ description: gerrit을 사용하면서 새롭게 알게 되고 실수로 잘못 
   * **Code review**의 중요성을 강조하며 Gerrit을 소개하고 있다.
   * 아래 그림을 보면 코드 리뷰를 위해서 개발자들은 Pending Changes 부분에 코드의 변화를 보낸다. 모든 변화가 확인이 된 후 실제 코드로 포함된다. (초록색 부분)
 
-![From gerrit documentation](<../.gitbook/assets/image (7).png>)
+![From gerrit documentation](<../.gitbook/assets/image (7) (1).png>)
 
 ## 주의할 부분
 
